@@ -26,12 +26,12 @@ public class AgenciaBancaria {
     }
 
     public ContaBancaria buscarConta(int numeroConta) {
-        return bancoDeDadosContas.get(numeroConta); // Busca a conta diretamente no HashMap
+        return bancoDeDadosContas.get(numeroConta); 
     }
 
 
     public Collection<ContaBancaria> getContas() {
-        return bancoDeDadosContas.values(); // Retorna a coleção de contas
+        return bancoDeDadosContas.values(); 
     }
 
     public void exibirContas() {
