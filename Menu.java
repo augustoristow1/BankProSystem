@@ -144,8 +144,8 @@ public class Menu {
 
     private void consultarSaldo() {
         System.out.print("Número da conta para consultar saldo: ");
-        int numeroConta = scanner.nextInt(); // O usuário deve inserir o número da conta
-        ContaBancaria conta = agencia.buscarConta(numeroConta); // Buscar a conta pelo número
+        int numeroConta = scanner.nextInt(); 
+        ContaBancaria conta = agencia.buscarConta(numeroConta); 
         if (conta != null) {
             conta.exibirSaldo();
         } else {
@@ -155,10 +155,10 @@ public class Menu {
 
     private void realizarDeposito() {
         System.out.print("Número da conta para depósito: ");
-        int numeroConta = scanner.nextInt(); // O usuário deve inserir o número da conta
+        int numeroConta = scanner.nextInt(); 
         System.out.print("Valor do depósito: ");
         double valor = scanner.nextDouble();
-        ContaBancaria conta = agencia.buscarConta(numeroConta); // Buscar a conta pelo número
+        ContaBancaria conta = agencia.buscarConta(numeroConta); 
         if (conta != null) {
             conta.depositar(valor);
         } else {
@@ -168,10 +168,10 @@ public class Menu {
 
     private void realizarSaque() {
         System.out.print("Número da conta para saque: ");
-        int numeroConta = scanner.nextInt(); // O usuário deve inserir o número da conta
+        int numeroConta = scanner.nextInt(); 
         System.out.print("Valor do saque: ");
         double valor = scanner.nextDouble();
-        ContaBancaria conta = agencia.buscarConta(numeroConta); // Buscar a conta pelo número
+        ContaBancaria conta = agencia.buscarConta(numeroConta); 
         if (conta != null) {
             try {
                 conta.sacar(valor);
@@ -185,9 +185,9 @@ public class Menu {
 
     private void realizarTransferencia() {
         System.out.print("Número da conta de origem: ");
-        int numeroContaOrigem = scanner.nextInt(); // O usuário deve inserir o número da conta de origem
+        int numeroContaOrigem = scanner.nextInt(); 
         System.out.print("Número da conta de destino: ");
-        int numeroContaDestino = scanner.nextInt(); // O usuário deve inserir o número da conta de destino
+        int numeroContaDestino = scanner.nextInt(); 
         System.out.print("Valor da transferência: ");
         double valor = scanner.nextDouble();
 
